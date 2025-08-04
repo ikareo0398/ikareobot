@@ -15,7 +15,11 @@ module.exports = (client, discord) => { // 修正: clientとdiscordを引数と�
               s4dmessage.channel.send('おはようだハメ！');
         }
         });
-        
+    s4d.client.on('messageCreate', async (s4dmessage) => {
+        if (((((s4dmessage.content) || '').startsWith('ハメ' || '')) || (((s4dmessage.content) || '').startsWith('あろ' || ''))) && (String((s4dmessage.content)).includes(String('おやすみ')))) {
+              s4dmessage.channel.send('おやすみハメ、、、💤');
+        }
+        });
 
     return {
         name: 'ping',
