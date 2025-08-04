@@ -47,7 +47,7 @@ client.on('messageCreate', (message) => {
       },
       {
         name: "気持ち良すぎだろ！",
-        value: "https://tenor.com/view/wakka-tidus-ffx-final-fantasy-%E3%83%AF%E3%83%83%E3%82%AB-gif-25901236"
+        value: "https://tenor.com/view/wakka-tedus-ff-ff-x-10-gif-1344735738209189254"
       },
       {
        name: "音ゲー",
@@ -117,7 +117,7 @@ client.on('messageCreate', (message) => {
     message.channel.send('https://tenor.com/view/wakka-ffx-doubt-glaring-gif-18415878');
   }
   if (message.content === '気持ち良すぎだろ！') {
-    message.channel.send('https://tenor.com/view/wakka-tidus-ffx-final-fantasy-%E3%83%AF%E3%83%83%E3%82%AB-gif-25901236');
+    message.channel.send('https://tenor.com/view/wakka-tedus-ff-ff-x-10-gif-1344735738209189254');
   }
   if (message.content === '音ゲー') {
     message.channel.send('https://tenor.com/view/angry-anime-gif-5703127');
