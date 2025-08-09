@@ -11,13 +11,18 @@ module.exports = (client, discord) => { // 修正: clientとdiscordを引数と�
     });
 
     s4d.client.on('messageCreate', async (s4dmessage) => {
-        if (((((s4dmessage.content) || '').startsWith('ハメ' || '')) || (((s4dmessage.content) || '').startsWith('あろ' || ''))) && (String((s4dmessage.content)).includes(String('おはよ')))) {
+        if (((((s4dmessage.content) || '').startsWith('ハメ' || '')) || (((s4dmessage.content) || '').startsWith('はめ' || ''))) && (String((s4dmessage.content)).includes(String('おはよ')))) {
               s4dmessage.channel.send('おはようだハメ！');
         }
         });
     s4d.client.on('messageCreate', async (s4dmessage) => {
-        if (((((s4dmessage.content) || '').startsWith('ハメ' || '')) || (((s4dmessage.content) || '').startsWith('あろ' || ''))) && (String((s4dmessage.content)).includes(String('おやすみ')))) {
+        if (((((s4dmessage.content) || '').startsWith('ハメ' || '')) || (((s4dmessage.content) || '').startsWith('はめ' || ''))) && (String((s4dmessage.content)).includes(String('おやすみ')))) {
               s4dmessage.channel.send('おやすみハメ、、、💤');
+        }
+        });
+    s4d.client.on('messageCreate', async (s4dmessage) => {
+        if (((((s4dmessage.content) || '').startsWith('ハメ' || '')) || (((s4dmessage.content) || '').startsWith('はめ' || ''))) && (String((s4dmessage.content)).includes(String('ドスケベ音頭')))) {
+              s4dmessage.channel.send('ち〇こ出してま〇こハメてよよいのよい♪\nあズッコバッコズッコバッコ\nズッコン♪　バッコン♪\nオナりイくならパコらにゃ　あん♥あん♥');
         }
         });
 
