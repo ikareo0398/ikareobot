@@ -8,8 +8,8 @@ module.exports = (botClient, discord) => {
     // PostgreSQL クライアント設定
     const pgClient = new Client({
         connectionString: process.env.DATABASE_URL, // Render の環境変数
-        //ssl: { rejectUnauthorized: false } // Render では SSL 必須
-        ssl: false // ローカル開発用に SSL を無効化
+        ssl: { rejectUnauthorized: false } // Render では SSL 必須
+        //ssl: false // ローカル開発用に SSL を無効化
     });
 
     pgClient.connect().catch(console.error);
